@@ -126,23 +126,29 @@ $(document).ready(function(){
 
             break;
         case '/': switch(true) {
-            case num1 > num2:
+            //positive and whole numbers
+            case num1 % num2 === 0:
                 question.answer = num1 / num2;
                 question.equation = `${String(num1)} / ${String(num2)}`
 
                 break;
-            case num1 < num2:
-                question.answer = num2 / num1;
-                question.equation = `${String(num1)} / ${String(num2)}`
-                break;
+
         }
-            question.answer = num3 / num1;
-            question.equation = `${String(num3)} / ${String(num1)}`;
             break;
             
                 
         }
         
+
+        if(ranOperator === '/' && num1 < num2 && num2 % num1 !== 0) {
+            num1 = randomNumberGenerator(range);
+            num2 = randomNumberGenerator(range);
+
+            question.answer = num1 / num2;
+
+            question.equation = `${String(num1)} / ${String(num2)}`
+            
+        }
             
 
 
