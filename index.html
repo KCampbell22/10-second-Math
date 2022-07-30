@@ -20,12 +20,14 @@
           <h2>10 Sec Maths Game</h2>
           <h3 id="time-left"></h3>
           <p>second left</p>
-            <label for="add"><input type="checkbox" class="mode" name="add" value="+" id="add" checked>+</label>
-            <label for="subtract"><input type="checkbox" class="mode" name="subtract" value="-" id="subtract">-</label>
-            <label for="multiply"><input type="checkbox" class="mode" name="multiply" value="*" id="multiply">*</label>
-            <label for="divide"><input type="checkbox" class="mode" name="divide" id="divide" value="/">/</label>
+            <div class="operators">
+              <label for="add"><input type="checkbox" class="mode" name="add" value="+" id="add" checked>+</label>
+              <label for="subtract"><input type="checkbox" class="mode" name="subtract" value="-" id="subtract">-</label>
+              <label for="multiply"><input type="checkbox" class="mode" name="multiply" value="*" id="multiply">*</label>
+              <label for="divide"><input type="checkbox" class="mode" name="divide" id="divide" value="/">/</label>
+            </div>
           <h1 id="equation"></h1>
-          <input id="user-input" type="number" />
+          <input id="user-input" type="number" min="1"/>
           <!-- Add the following after the input element -->
           <h4>Score: <span id="score"></span></h4>
           <h4>High score: <span id="highScore"></span></h4>

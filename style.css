@@ -1,3 +1,43 @@
 h2{
     color: blue;
 }
+
+.row{
+    display: flex;
+
+}
+
+.operators{
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+input[type="checkbox"]{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    border: 1px solid black;
+    appearance: none;
+    outline: none;
+    box-shadow: none;
+    -fx-focus-traversable: false;
+    
+}
+input[type="checkbox"]:focus:checked{
+    content: "";
+    outline-color: none;
+    appearance: none;
+    outline: none;
+    
+    
+}
+    
+
+input:checked{
+    background-color: blue;
+    outline: none;
+    outline-color: transparent;
+    appearance: none;
+}
